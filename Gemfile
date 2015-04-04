@@ -35,13 +35,22 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'awesome_print' #https://github.com/michaeldv/awesome_print
   gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'capybara'
+  gem 'dotenv-rails'
+  #gem 'guard-konacha'
+  #gem 'guard-jslint-on-rails'
+  gem 'jslint_on_rails'
+  gem 'konacha'
+  gem 'lograge'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rubocop' #https://github.com/bbatsov/rubocop
+  gem 'selenium-webdriver'
+  gem 'simplecov'
   gem 'spring'
+  gem 'web-console', '~> 2.0'
+  gem 'typhoeus'
+  gem 'vcr'
 end
 
